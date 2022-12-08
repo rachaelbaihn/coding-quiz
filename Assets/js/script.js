@@ -24,13 +24,15 @@ addEventListener('click', (event) => {});
 
 onclick = (event) => {
 };
-    var startbtn = document.getElementById("gameStart")
+
+var startbtn = document.getElementById("gameStart")
 
 //THEN a timer starts and I am presented with a question
 startbtn.addEventListener("click", ()=>{
 
-    event.preventDefault();
     displayQuestions();
+
+    
 
     var downloadTimer = setInterval(()=>{
     document.getElementById("countdown").innerHTML = timeleft + " "+"seconds remaining";
