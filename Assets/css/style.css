@@ -82,5 +82,9 @@ body {
     text-align: right
   }
 
+  main {
+    display: none;
+  }
+
 
   

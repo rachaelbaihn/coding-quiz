@@ -20,19 +20,22 @@ var questions = [{
 
 //GIVEN I am taking a code quiz
 //WHEN I click the start button
-addEventListener('click', (event) => {});
+//addEventListener('click', (event) => {});
 
-onclick = (event) => {
-};
+//onclick = (event) => {
+//};
 
 var startbtn = document.getElementById("gameStart")
 
 //THEN a timer starts and I am presented with a question
 startbtn.addEventListener("click", ()=>{
+    var header=document.querySelector("header")
+    header.style.display="none"
 
-    displayQuestions();
-
+    var main=document.querySelector("main")
+    main.style.display="block"
     
+    displayQuestions();
 
     var downloadTimer = setInterval(()=>{
     document.getElementById("countdown").innerHTML = timeleft + " "+"seconds remaining";
